@@ -18,8 +18,11 @@ public class DriveTrain extends Subsystem {
 	public VictorSP rightFront = new VictorSP(RobotMap.rightFront);	
 	public VictorSP leftRear = new VictorSP(RobotMap.leftRear);
 	public VictorSP rightRear = new VictorSP(RobotMap.rightRear);
-	public RobotDrive drive = new RobotDrive(leftFront, rightFront);
+	public RobotDrive drive = new RobotDrive (final int rearLeftMotor, final int frontLeftMotor, int frontRightMotor, int rearRightMotor);
 
+	public DriveTrain(){
+		super();
+	}
     public void initDefaultCommand() {
         // Set the default command for a subsystem here.
         //setDefaultCommand(new MySpecialCommand());
