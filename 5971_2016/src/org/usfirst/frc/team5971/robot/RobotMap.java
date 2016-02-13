@@ -20,9 +20,9 @@ public interface RobotMap {
 	
 	
 	// CAN
-	public static final int leftMotorA = 0;
-	public static final int leftMotorB = 2;
+	public static final int leftFront = 0;
+	public static final int leftRear = 2;
 	
-	public static final int rightMotorA = 1;
-	public static final int rightMotorB = 3;
+	public static final int rightFront = 1;
+	public static final int rightRear = 3;
 }
