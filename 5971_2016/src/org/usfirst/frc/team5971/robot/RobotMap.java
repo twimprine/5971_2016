@@ -5,7 +5,7 @@ package org.usfirst.frc.team5971.robot;
  * the wiring easier and significantly reduces the number of magic numbers
  * floating around.
  */
-public class RobotMap {
+public interface RobotMap {
 
 	
     // For example to map the left and right motors, you could define the
@@ -20,7 +20,9 @@ public class RobotMap {
 	
 	
 	// CAN
-	public static final int leftMotor = 0;
-	public static final int rightMotor = 1;
+	public static final int leftMotorA = 0;
+	public static final int leftMotorB = 2;
 	
+	public static final int rightMotorA = 1;
+	public static final int rightMotorB = 3;
 }

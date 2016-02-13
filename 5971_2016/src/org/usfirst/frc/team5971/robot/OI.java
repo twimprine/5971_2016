@@ -10,8 +10,8 @@ import org.usfirst.frc.team5971.robot.commands.ExampleCommand;
  */
 public class OI {
     //// CREATING BUTTONS
-    // One type of button is a joystick button which is any button on a joystick.
-    // You create one by telling it which joystick it's on and which button
+    // One type of button is a joy stick button which is any button on a joystick.
+    // You create one by telling it which joy stick it's on and which button
     // number it is.
     public Joystick stick = new Joystick(0);
     // Button button = new JoystickButton(stick, buttonNumber);
