@@ -18,7 +18,9 @@ public class DriveTrain extends Subsystem {
 	public VictorSP rightFront = new VictorSP(RobotMap.rightFront);	
 	public VictorSP leftRear = new VictorSP(RobotMap.leftRear);
 	public VictorSP rightRear = new VictorSP(RobotMap.rightRear);
-	public RobotDrive drive = new RobotDrive (final int rearLeftMotor, final int frontLeftMotor, int frontRightMotor, int rearRightMotor);
+	
+	// Proper declaration see constructor in RobotDrive before modifying
+	public RobotDrive drive = new RobotDrive(leftFront, leftRear, rightFront, rightRear);
 
 	public DriveTrain(){
 		super();
