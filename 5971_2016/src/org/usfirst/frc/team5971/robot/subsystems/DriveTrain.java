@@ -14,10 +14,10 @@ public class DriveTrain extends Subsystem {
     // Put methods for controlling this subsystem
     // here. Call these from Commands.
 	
-	public VictorSP leftFront = new VictorSP(RobotMap.leftFront);
-	public VictorSP rightFront = new VictorSP(RobotMap.rightFront);	
-	public VictorSP leftRear = new VictorSP(RobotMap.leftRear);
-	public VictorSP rightRear = new VictorSP(RobotMap.rightRear);
+	public VictorSP leftFront = new VictorSP(RobotMap.DRIVE_MOTOR_LEFT_FRONT);
+	public VictorSP rightFront = new VictorSP(RobotMap.DRIVE_MOTOR_RIGHT_FRONT);	
+	public VictorSP leftRear = new VictorSP(RobotMap.DRIVE_MOTOR_LEFT_REAR);
+	public VictorSP rightRear = new VictorSP(RobotMap.DRIVE_MOTOR_RIGHT_REAR);
 	
 	// Proper declaration see constructor in RobotDrive before modifying
 	public RobotDrive drive = new RobotDrive(leftFront, leftRear, rightFront, rightRear);
@@ -30,4 +30,3 @@ public class DriveTrain extends Subsystem {
         //setDefaultCommand(new MySpecialCommand());
     }
 }
-

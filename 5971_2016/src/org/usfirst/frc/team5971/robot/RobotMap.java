@@ -20,9 +20,24 @@ public interface RobotMap {
 	
 	
 	// CAN
-	public static final int leftFront = 0;
-	public static final int leftRear = 2;
 	
-	public static final int rightFront = 1;
-	public static final int rightRear = 3;
+	// DRIVE MOTORS
+	public static final int DRIVE_MOTOR_LEFT_FRONT = 0;
+	public static final int DRIVE_MOTOR_LEFT_REAR = 2;
+	public static final int DRIVE_MOTOR_RIGHT_FRONT = 1;
+	public static final int DRIVE_MOTOR_RIGHT_REAR = 3;
+	
+	// BALL MANIPULATION MOTORS
+	public static final int GRIPPER_MOTOR_RIGHT = 4;
+	public static final int GRIPPER_MOTOR_LEFT = 5;
+	public static final int THROW_MOTOR_RIGHT = 6;
+	public static final int THROW_MOTOR_LEFT = 7;
+	
+	// SENSORS
+	
+	// Digital Inputs
+	public static final int BOULDER_LIMIT_SWITCH = 0;
+	
+	// Analog Inputs
+	public static final int BOULDER_LED_SENSOR = 0;
 }
