@@ -1,4 +1,7 @@
 package org.usfirst.frc.team5971.robot;
+
+import edu.wpi.first.wpilibj.DigitalInput;
+
 /**
  * The RobotMap is a mapping from the ports sensors and actuators are wired into
  * to a variable name. This provides flexibility changing wiring, makes checking
@@ -36,8 +39,22 @@ public interface RobotMap {
 	// SENSORS
 	
 	// Digital Inputs
-	public static final int BOULDER_LIMIT_SWITCH = 0;
+	public static final int BOULDER_LIMIT_SWITCH_PORT = 0;
 	
 	// Analog Inputs
-	public static final int BOULDER_LED_SENSOR = 0;
+	public static final int BOULDER_LED_SENSOR_PORT = 0;
+	
+	// Create Devices
+	
+	// Create Boulder Sensor
+//	public static DigitalInput boulderSwitch;
+	
+	
+	public static void init() {
+		// Initialize modules
+
+//		boulderSwitch = new DigitalInput(BOULDER_LIMIT_SWITCH_PORT);
+	}
+
+	
 }
