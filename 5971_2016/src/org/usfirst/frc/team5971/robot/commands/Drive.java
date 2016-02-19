@@ -13,7 +13,7 @@ public class Drive extends Command {
     public Drive() {
         // Use requires() here to declare subsystem dependencies
         // eg. requires(chassis);
-    	requires(Robot.drive);
+    	requires(Robot.driveTrain);
     }
 
     // Called just before this Command runs the first time
@@ -22,7 +22,7 @@ public class Drive extends Command {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-    	Robot.drive.drive.arcadeDrive(Robot.oi.stick.getAxis(AxisType.kX),Robot.oi.stick.getAxis(AxisType.kY));
+    	Robot.driveTrain.drive.arcadeDrive(Robot.oi.stick.getAxis(AxisType.kX),Robot.oi.stick.getAxis(AxisType.kY));
     }
 
     // Make this return true when this Command no longer needs to run execute()

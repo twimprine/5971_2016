@@ -14,6 +14,13 @@ public class OI {
     // You create one by telling it which joy stick it's on and which button
     // number it is.
     public Joystick stick = new Joystick(0);
+    
+    // Create joysticks for driving and aiming the launcher
+    public Joystick driveStick;
+    
+    public Joystick getJoystickDrive() {
+        return this.driveStick;
+    }
     // Button button = new JoystickButton(stick, buttonNumber);
     
     // There are a few additional built in buttons you can use. Additionally,

@@ -22,7 +22,7 @@ public class Robot extends IterativeRobot {
 
 	public static final ExampleSubsystem exampleSubsystem = new ExampleSubsystem();
 	public static OI oi;
-	public static DriveTrain drive = new DriveTrain();
+	public static DriveTrain driveTrain = new DriveTrain();
 
     Command autonomousCommand;
     SendableChooser chooser;
