@@ -1,7 +1,7 @@
 package org.usfirst.frc.team5971.robot;
 
 import edu.wpi.first.wpilibj.DigitalInput;
-
+import edu.wpi.first.wpilibj.VictorSP;
 /**
  * The RobotMap is a mapping from the ports sensors and actuators are wired into
  * to a variable name. This provides flexibility changing wiring, makes checking
@@ -21,14 +21,17 @@ public interface RobotMap {
     // public static int rangefinderPort = 1;
     // public static int rangefinderModule = 1;
 	
-	
-	// CAN
-	
 	// DRIVE MOTORS
 	public static final int DRIVE_MOTOR_LEFT_FRONT = 0;
 	public static final int DRIVE_MOTOR_LEFT_REAR = 2;
 	public static final int DRIVE_MOTOR_RIGHT_FRONT = 1;
 	public static final int DRIVE_MOTOR_RIGHT_REAR = 3;
+	
+	// CAN Create Motor Controlers for driveTrain
+	public static VictorSP leftFrontMotor;
+	public static VictorSP leftBackMotor;
+	public static VictorSP rightFrontMotor;
+	public static VictorSP rightBackMotor;
 	
 	// BALL MANIPULATION MOTORS
 	public static final int GRIPPER_MOTOR_RIGHT = 4;
