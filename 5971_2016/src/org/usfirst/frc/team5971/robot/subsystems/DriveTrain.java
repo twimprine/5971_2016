@@ -23,7 +23,7 @@ public class DriveTrain extends Subsystem {
 	public VictorSP rightRear = new VictorSP(RobotMap.DRIVE_MOTOR_RIGHT_REAR);
 	
 	// Proper declaration see constructor in RobotDrive before modifying
-	public RobotDrive drive = new RobotDrive(leftFront, leftRear, rightFront, rightRear);
+	public RobotDrive drive = RobotMap.driveMap;
 
 	public double joystickThrottle;
 	
