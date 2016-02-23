@@ -71,7 +71,8 @@ public interface RobotMap {
 		driveMap.setExpiration(0.1);
 		driveMap.setSensitivity(0.5);
 		driveMap.setMaxOutput(1.0);
-		
+		driveMap.setInvertedMotor(RobotDrive.MotorType.kRearLeft, true);
+		driveMap.setInvertedMotor(RobotDrive.MotorType.kRearRight, true);
 		
 	}
 
