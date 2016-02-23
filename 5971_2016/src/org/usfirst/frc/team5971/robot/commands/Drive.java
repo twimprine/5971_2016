@@ -1,5 +1,6 @@
 package org.usfirst.frc.team5971.robot.commands;
 
+import org.usfirst.frc.team5971.robot.OI;
 import org.usfirst.frc.team5971.robot.Robot;
 
 import edu.wpi.first.wpilibj.Joystick.AxisType;
@@ -22,7 +23,7 @@ public class Drive extends Command {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-    	Robot.driveTrain.drive.arcadeDrive(Robot.oi.stick.getAxis(AxisType.kX),Robot.oi.stick.getAxis(AxisType.kY));
+    	Robot.driveTrain.drive.arcadeDrive(OI.stick.getAxis(AxisType.kX),OI.stick.getAxis(AxisType.kY));
     }
 
     // Make this return true when this Command no longer needs to run execute()

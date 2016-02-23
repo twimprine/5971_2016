@@ -22,7 +22,7 @@ public class Robot extends IterativeRobot {
 
 	public static final ExampleSubsystem exampleSubsystem = new ExampleSubsystem();
 	public static OI oi;
-	public static DriveTrain driveTrain = new DriveTrain();
+	public static DriveTrain driveTrain;
 
     Command autonomousCommand;
     SendableChooser chooser;
@@ -32,7 +32,9 @@ public class Robot extends IterativeRobot {
      * used for any initialization code.
      */
     public void robotInit() {
-		oi = new OI();
+		RobotMap.init();
+    	oi = new OI();
+    	driveTrain = new DriveTrain();
         chooser = new SendableChooser();
         chooser.addDefault("Default Auto", new ExampleCommand());
 //        chooser.addObject("My Auto", new MyAutoCommand());

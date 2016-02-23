@@ -1,16 +1,19 @@
 package org.usfirst.frc.team5971.robot;
 
-import edu.wpi.first.wpilibj.DigitalInput;
+//import edu.wpi.first.wpilibj.DigitalInput;
 import edu.wpi.first.wpilibj.VictorSP;
+
+//import org.usfirst.frc.team5971.robot.subsystems.DriveTrain;
+
+import edu.wpi.first.wpilibj.*;
 /**
  * The RobotMap is a mapping from the ports sensors and actuators are wired into
  * to a variable name. This provides flexibility changing wiring, makes checking
  * the wiring easier and significantly reduces the number of magic numbers
  * floating around.
  */
-public interface RobotMap {
+public class RobotMap {
 
-	
     // For example to map the left and right motors, you could define the
     // following variables to use with your drivetrain subsystem.
     // public static int leftMotor = 1;
@@ -23,31 +26,31 @@ public interface RobotMap {
 	
 	//ROBOT DRIVE
 	public static RobotDrive driveMap;
-	// DRIVE MOTORS
-	public static final int DRIVE_MOTOR_LEFT_FRONT = 0;
-	public static final int DRIVE_MOTOR_LEFT_REAR = 2;
-	public static final int DRIVE_MOTOR_RIGHT_FRONT = 1;
-	public static final int DRIVE_MOTOR_RIGHT_REAR = 3;
 	
 	// CAN Create Motor Controlers for driveTrain
-	public static VictorSP leftFrontMotor;
-	public static VictorSP leftRearMotor;
-	public static VictorSP rightFrontMotor;
-	public static VictorSP rightRearMotor;
+	public static VictorSP leftFrontMotor; //0
+	public static VictorSP leftRearMotor;  //2
+	public static VictorSP rightFrontMotor; //1
+	public static VictorSP rightRearMotor; //3
+
+	public static int DRIVE_MOTOR_RIGHT_FRONT = 1;
+	public static int DRIVE_MOTOR_LEFT_FRONT = 0;
+	public static int DRIVE_MOTOR_LEFT_REAR = 2;
+	public static int DRIVE_MOTOR_RIGHT_REAR = 3;
 	
 	// BALL MANIPULATION MOTORS
-	public static final int GRIPPER_MOTOR_RIGHT = 4;
-	public static final int GRIPPER_MOTOR_LEFT = 5;
-	public static final int THROW_MOTOR_RIGHT = 6;
-	public static final int THROW_MOTOR_LEFT = 7;
+	public static int GRIPPER_MOTOR_RIGHT = 4;
+	public static int GRIPPER_MOTOR_LEFT = 5;
+	public static int THROW_MOTOR_RIGHT = 6;
+	public static int THROW_MOTOR_LEFT = 7;
 	
 	// SENSORS
 	
 	// Digital Inputs
-	public static final int BOULDER_LIMIT_SWITCH_PORT = 0;
+	public static int BOULDER_LIMIT_SWITCH_PORT = 0;
 	
 	// Analog Inputs
-	public static final int BOULDER_LED_SENSOR_PORT = 0;
+	public static int BOULDER_LED_SENSOR_PORT = 0;
 	
 	// Create Devices
 	

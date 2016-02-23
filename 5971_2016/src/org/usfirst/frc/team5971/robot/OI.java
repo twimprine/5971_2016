@@ -13,7 +13,7 @@ public class OI {
     // One type of button is a joy stick button which is any button on a joystick.
     // You create one by telling it which joy stick it's on and which button
     // number it is.
-    public Joystick stick
+    public static Joystick stick;
     
     //OI Constructor
     public OI() {
@@ -21,8 +21,8 @@ public class OI {
     }
     
     //Get method for Joystick sitck
-    public Joystick getJoystickDrive() {
-        return this.stick;
+    public static Joystick getJoystickDrive() {
+        return stick;
     }
     // Button button = new JoystickButton(stick, buttonNumber);
     
