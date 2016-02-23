@@ -21,6 +21,8 @@ public interface RobotMap {
     // public static int rangefinderPort = 1;
     // public static int rangefinderModule = 1;
 	
+	//ROBOT DRIVE
+	public static RobotDrive driveMap;
 	// DRIVE MOTORS
 	public static final int DRIVE_MOTOR_LEFT_FRONT = 0;
 	public static final int DRIVE_MOTOR_LEFT_REAR = 2;
@@ -29,9 +31,9 @@ public interface RobotMap {
 	
 	// CAN Create Motor Controlers for driveTrain
 	public static VictorSP leftFrontMotor;
-	public static VictorSP leftBackMotor;
+	public static VictorSP leftRearMotor;
 	public static VictorSP rightFrontMotor;
-	public static VictorSP rightBackMotor;
+	public static VictorSP rightRearMotor;
 	
 	// BALL MANIPULATION MOTORS
 	public static final int GRIPPER_MOTOR_RIGHT = 4;
@@ -55,8 +57,22 @@ public interface RobotMap {
 	
 	public static void init() {
 		// Initialize modules
-
-//		boulderSwitch = new DigitalInput(BOULDER_LIMIT_SWITCH_PORT);
+		leftFrontMotor = new VictorSP(DRIVE_MOTOR_LEFT_FRONT);
+		
+		rightFrontMotor = new VictorSP(DRIVE_MOTOR_RIGHT_FRONT);
+		
+		leftRearMotor = new VictorSP(DRIVE_MOTOR_LEFT_REAR);
+		
+		rightRearMotor = new VictorSP(DRIVE_MOTOR_RIGHT_REAR);
+		
+		driveMap = new RobotDrive(leftFrontMotor, leftRearMotor, rightFrontMotor, rightRearMotor);
+		
+		driveMap.setSafetyEnabled(true);
+		driveMap.setExpiration(0.1);
+		driveMap.setSensitivity(0.5);
+		driveMap.setMaxOutput(1.0);
+		
+		
 	}
 
 	
